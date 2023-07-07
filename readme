@@ -1,0 +1,25 @@
+An Integrated Framework for Dynamic Vehicle Routing
+Problems with Pick-up and Delivery and Time
+Windows and Shared Fleet Capacity Planning
+Eyup Tolunay Kup, Salih Cebeci, Barıs Bayram, Gozde Aydın,
+Burcin Bozkaya, Raha Akhavan-Tabatabae
+
+Files :
+1) exp3_19vehicle_problem.json -> The non-scaled problem that used in the Section 5.3 in the paper.
+2) exp3__19vehicle_distMatrix.txt -> Distance matrix for the non-scaled problem that used in the Section 5.3 in the paper.
+3) exp3_3vehicle_problem.json -> The 3-vehicle scaled problem that used in the Section 5.3 in the paper.
+4) exp3_3vehicle_distMatrix.txt -> Distance matrix for the 3-vehicle scaled problem that used in the Section 5.3 in the paper.
+
+Problem File Details :
+
+- "delivery" subset includes informations about all location nodes and deliveries.
+- "vehicle" subset includes informations about all vehicles.
+- "detail" subset includes informations about problem details such as problem delivery startTime, endTime.
+- The node with "deliveryID" = 0 represents the cross-dock.
+- Nodes with "market" = true represent market locations (time-windowed fast delivery collection points).
+- Nodes with "marketDelivery" = true represent market deliveries (time-windowed fast deliveries).
+- The "orderTime" key represents the time when the order was placed and details arrived at the cross-dock.
+- The "serviceTime" key represents the required service time for delivering the relevant delivery, in seconds.
+- The "productCode" key distinguishes the relevant product type of the delivery. HX_EX stands for time-windowed fast deliveries, and HX_STD stands for standard shipments.
+- The "marketId" key represents the relevant collection point ID for market (time-windowed fast delivery) deliveries.
+- The "deliveryStartTime" and "deliveryEndTime" keys represent time window information for relevant deliveries.
