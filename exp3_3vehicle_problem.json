@@ -839,11 +839,8 @@
         }
     ],
     "detail": {
-        "problemName": "PROBLEM FROM OUR DATA",
         "startTime": "09:00:00",
         "endTime": "18:00:00",
-        "timeWindow": false,
-        "timeLimitControl": true,
         "distanceSource": "OpenRoutingService"
     }
 }
